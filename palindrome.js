@@ -1,16 +1,16 @@
-let str = "dad"
+
 
 function checkPalindrome(str) {
     let bag = ""
-    for (let i = str.length - 1; i >= 0; i++) {
-        bag = bag_str[i]
+    for (let i = str.length - 1; i >= 0; i--) {
+        bag+=str[i]
     }
     return bag;
 
 }
-let newStr = checkPalindrome("dad")
-if (newStr == str) {
+let rev_str = checkPalindrome("mom")
+if(rev_str == str){
     console.log("is palindrome")
-} else {
+}else {
     console.log("Not palindrome")
 }
