@@ -1,13 +1,13 @@
 function checkPrime(num) {
-    let factors = 1
-    for (let i = 0; i <= num; i++) {
+    let factors =0
+    for (let i=1; i<= num; i++) {
         if (num % i == 1) {
-            count++
+            factors++
         }
     }
-    if (count == 2) {
-        console.log("prime")
+    if (factors == 2) {
+        console.log("prime Number")
     } else {
-        console.log("not prime")
+        console.log("not prime Number")
     }
 }
